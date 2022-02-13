@@ -1,0 +1,28 @@
+NUM = [10,9,8,7,6,5,4,3,2,1]
+
+loop I from 0 to 9
+
+    LEAST = I
+
+    loop J from I+1 to 9
+
+        if NUM[J] < NUM[LEAST] then
+
+           LEAST = J
+
+        end if
+    end loop
+
+    TEMP = NUM[LEAST]
+
+    NUM[LEAST] = NUM[I]
+
+    NUM[I] = TEMP
+
+end loop
+
+
+
+   loop C from 0 to 9
+      output NUM[C]
+   end loop
